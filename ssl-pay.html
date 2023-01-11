@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <title>Ağkuş Teknoloji E-ticaret Çözümleri</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/25/25645.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="progressArea">
+            <div class="progress"></div>
+        </div>
+        <div class="container-fluid pt-2 d-flex justify-content-between info d-none d-md-flex">
+            <div class="pt-3">
+                <a href="mailto:" class="text-decoration-none text-secondary ms-5"><i
+                        class="fas fa-at me-1"></i>demo@iletisim.com</a>
+                <a href="tel:" class="text-decoration-none text-secondary ms-5"><i
+                        class="fas fa-phone-volume me-1"></i>+90 500 000 00 00</a>
+            </div>
+            <div class="me-5">
+                <button class="button login">Giriş Yap</button>
+                <button class="button signup">Üye Ol</button>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+            <div class="container-fluid ms-5 me-5">
+                <a class="navbar-brand fw-bolder" href="#"><img src="img/Logo.gif" class="logo" alt="" width="200"
+                        height="50"></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-md-flex justify-content-center" id="collapsibleNavId">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-4">
+                            <a class="nav-link fw-bolder text-dark menu" href="index.html" aria-current="page">Ana
+                                Sayfa</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link fw-bolder text-dark menu" href="#about">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link fw-bolder text-dark menu" href="#contact">İletişim</a>
+                        </li>
+                        <li class="nav-item dropdown ms-4 menu">
+                            <a class="nav-link dropdown-toggle fw-bolder text-dark" href="#" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">E-ticaret</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item fw-bolder text-dark menu" href="index.html#e-commerce">E-ticaret
+                                    Paketleri</a>
+                                <a class="dropdown-item fw-bolder text-dark menu" href="index.html#demo">Demolarımız</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                        <button class="button d-sm-none login-mobile">Giriş Yap</button>
+                        <button class="button d-sm-none signup-mobile">Üye Ol</button>
+                    </div>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control search" type="text" placeholder="Ara">
+                    <button class="button my-2 my-sm-0" type="submit">Ara</button>
+                </form>
+            </div>
+        </nav>
+        <template id="loginForm">
+            <swal-title>Giriş Yap</swal-title>
+            <swal-html>
+                <form action="">
+                    <div class="form-floating mb-4 slideBottomForm">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email adresiniz</label>
+                    </div>
+                    <div class="form-floating mb-4 slideBottomForm">
+                        <input type="password" class="form-control" id="floatingInput" placeholder="password">
+                        <label for="floatingInput">Şifreniz</label>
+                    </div>
+                </form>
+            </swal-html>
+            <swal-button type="confirm" color="green">Giriş Yap</swal-button>
+            <swal-button type="deny">Şifermi Unuttum</swal-button>
+            <swal-param name="allowEscapeKey" value="false" />
+            <swal-param name="customClass" value='{ "popup": "my-popup" }' />
+            <swal-function-param name="didOpen" value="popup => console.log(popup)" />
+        </template>
+        <template id="signupForm">
+            <swal-title>Üye Ol</swal-title>
+            <swal-html>
+                <form action="">
+                    <div class="form-floating mb-4 slideBottomForm">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="John">
+                        <label for="floatingInput">İsim</label>
+                    </div>
+                    <div class="form-floating mb-4 slideBottomForm">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Doe">
+                        <label for="floatingInput">Soyisim</label>
+                    </div>
+                    <div class="form-floating mb-4 slideBottomForm">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email adresiniz</label>
+                    </div>
+                    <div class="form-floating mb-4 slideBottomForm">
+                        <input type="password" class="form-control" id="floatingInput" placeholder="password">
+                        <label for="floatingInput">Şifreniz</label>
+                    </div>
+                </form>
+            </swal-html>
+            <swal-button type="confirm" color="green">Üye ol</swal-button>
+            <swal-param name="allowEscapeKey" value="false" />
+            <swal-param name="customClass" value='{ "popup": "my-popup" }' />
+            <swal-function-param name="didOpen" value="popup => console.log(popup)" />
+        </template>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/slider/dijital-pazarlama-slider.jpg" class="d-block w-100 slider-img img-fluid"
+                        alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/slider/seo-danismanligi-hizmeti-slider.jpg" class="d-block w-100 slider-img img-fluid"
+                        alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/slider/e-ticaret-paketleri-slider.png" class="d-block w-100 slider-img img-fluid"
+                        alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/slider/e-ticaret.png" class="d-block w-100 slider-img img-fluid" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="container pt-3">
+            <h3 class="text-center">SSL Satın Al</h3>
+            <div class="d-md-flex justify-content-center">
+                <form action="" class="p-5">
+                    <div class="input-group mb-3">
+                        <select class="form-select">
+                            <option selected>SSL Paketi Seç</option>
+                            <option value="1">Comodo Positive SSL</option>
+                            <option value="2">GeoTrust QickSSL Premium Certificate</option>
+                            <option value="3">RapidSSL Certificate</option>
+                        </select>
+                    </div>
+                    <div class=" d-flex justify-content-center">
+                        <input type="submit" value="Satın Al" class="button">
+                    </div>
+                </form>
+            </div>
+            <div class="container pt-3">
+                <h3 class="text-center">SSL Fiyatları</h3>
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped table-secondary">
+                        <thead>
+                            <tr>
+                                <th scope="col">Marka</th>
+                                <th scope="col">Paket Adı</th>
+                                <th scope="col">Mobil</th>
+                                <th scope="col">Fiyat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <td scope="row"><img src="img/ssl/comodo.png" alt="" width="100"></td>
+                                <td>Comodo Positive SSL</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td>$5.00</td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row"><img src="img/ssl/geotrust.png" alt="" width="100"></td>
+                                <td>GeoTrust QickSSL Premium Certificate</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td>$5.00</td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row"><img src="img/ssl/rapidssl.png" alt="" width="100"></td>
+                                <td>RapidSSL Certificate</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td>$5.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid pt-3 bg" id="about">
+            <h3 class="text-center text-white">Hakkımızda</h3>
+            <div class="card  border-0">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/about.gif" class="img-fluid rounded-start slideLeft" alt="Biz kimiz ?">
+                    </div>
+                    <div class="col-md-8 pt-4">
+                        <div class="card-body slideBottom">
+                            <h5 class="card-title text-center fs-3">Biz Kimiz ?</h5>
+                            <p class="card-text p-5" style="text-indent:50px">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Molestias placeat sint saepe inventore eligendi fuga repellat, neque
+                                itaque architecto qui assumenda laborum rem. Officia fugiat necessitatibus ipsam magnam
+                                placeat eum molestias voluptatibus sed perferendis magni repudiandae, iusto amet soluta!
+                                Ullam dolorem quam amet numquam fugit dicta quas cum commodi id consequatur officiis
+                                obcaecati aut saepe tempora cupiditate minima tempore adipisci illum, quo ipsa corporis
+                                enim quae laboriosam voluptatum! Sed amet totam ducimus rem possimus doloremque
+                                reprehenderit dolores omnis odio, fugiat ad, expedita laudantium repellendus voluptatum
+                                iure quasi quo. Molestiae iusto impedit debitis, accusantium non incidunt pariatur
+                                asperiores? A, qui nemo!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-center" id="contact">
+            <form action="" class="p-4">
+                <h3 class="text-center text-white fw-bold pb-2">İletişim</h3>
+                <div class="form-floating mb-3 slideBottomForm">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="John">
+                    <label for="floatingInput">Adınız</label>
+                </div>
+                <div class="form-floating mb-3 slideBottomForm">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Doe">
+                    <label for="floatingInput">Soyadınız</label>
+                </div>
+                <div class="form-floating mb-4 slideBottomForm">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email adresiniz</label>
+                </div>
+                <textarea name="message" id="message" class="w-100 text-area slideBottomForm" rows="5"
+                    placeholder="Mesajınız..." style="resize: none;"></textarea>
+                <div class="d-flex justify-content-center p-5 slideBottomForm">
+                    <button type="submit" class="btn btn-success w-50">Gönder</button>
+                </div>
+            </form>
+            <div class="custom-shape-divider-bottom-1673041566">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+    </main>
+    <div class="container">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-md-5 mb-3">
+                    <img src="img/Logo.gif" alt="">
+                    <ul class="nav flex-column">
+                        <address>
+                            <li class="nav-item mb-2"><i class="fas fa-location-arrow me-2"></i> <span
+                                    class="fw-bold">Merkez:
+                                </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, perferendis?
+                            </li>
+                            <li class="nav-item mb-2"><i class="fas fa-map-marker-alt"></i> <span
+                                    class="fw-bold">Tekokent:
+                                </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, perferendis?
+                            </li>
+                            <li class="nav-item mb-2"><i class="fas fa-phone-volume"></i> <span
+                                    class="fw-bold">İletişim:
+                                </span>+90 500 000 00 00
+                            </li>
+                        </address>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Çözümlerimiz</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html#e-commerce" class="nav-link p-0 menu">E-ticaret
+                                Paketleri</a></li>
+                        <li class="nav-item mb-2"><a href="domain-pay.html" class="nav-link p-0 menu">Domain</a></li>
+                        <li class="nav-item mb-2"><a href="hosting-pay.html" class="nav-link p-0 menu">Hosting</a></li>
+                        <li class="nav-item mb-2"><a href="ssl-pay.html" class="nav-link p-0 menu">SSL Paketleri</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Kurumsal</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 menu">Hakkımızda</a></li>
+                        <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 menu">İletişim</a></li>
+                        <li class="nav-item mb-2"><a href="support.html" class="nav-link p-0 menu">Destek Sistemi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Dökümanlar</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="hosting.html" class="nav-link p-0 menu">Hosting nedir ?</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="domain.html" class="nav-link p-0 menu">Domain nedir ?</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="ssl.html" class="nav-link p-0 menu">SSL nedir ?</a></li>
+                        <li class="nav-item mb-2"><a href="sss.html" class="nav-link p-0 menu">S.S.S</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p class="text-center">&copy; 2023 Tüm hakları saklıdır.</p>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-google"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <div class="scrollUp d-flex justify-content-center"><i class="fas fa-arrow-up text-white fa-2x mt-3"></i></div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

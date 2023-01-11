@@ -1,0 +1,267 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.progressArea{
+    width:100%;
+    height:4px;
+    position:fixed;
+    z-index: 1;
+}
+.progress{
+    height:4px;
+    background-image:linear-gradient(#d378ec,#d378ec);
+    width:0;
+}
+.bg {
+    background-image: linear-gradient(#751290,#8f0761);
+}
+
+.slider-img {
+    height: 450px;
+}
+
+@media (max-width:768px) {
+    .logo {
+        width: 150px;
+    }
+
+    .search {
+        height: 45px;
+        margin-top: 5px;
+    }
+
+    .slider-img {
+        height: inherit;
+        aspect-ratio: 16/9;
+    }
+}
+
+.button {
+    position: relative;
+    margin: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #751290;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #751290;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #751290;
+}
+
+.button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #751290;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.menu {
+    text-decoration: none;
+    position: relative;
+    color: #000 !important;
+}
+
+.menu::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.menu:hover::after {
+    transform: scaleX(1);
+}
+
+/* index.html css */
+.avantage {
+    width: 150px;
+    height: 25px;
+    background-color: red;
+    color: #ffffff;
+    transform: rotate(-45deg);
+    position: relative;
+    left: -45px;
+    top: 15px;
+}
+
+.platinum:hover>.avantage {
+    transform: rotate(0deg);
+    width: 100%;
+    left: 0;
+    top: 10px;
+    transition: all 0.5s ease;
+}
+
+.eko {
+    width: 150px;
+    height: 25px;
+    background-color: rgb(0, 162, 255);
+    color: #ffffff;
+    transform: rotate(-45deg);
+    position: relative;
+    left: -45px;
+    top: 15px;
+}
+
+.gold {
+    width: 150px;
+    height: 25px;
+}
+
+.ekonomic:hover>.eko {
+    transform: rotate(0deg);
+    width: 100%;
+    left: 0;
+    top: 10px;
+    transition: all 0.5s ease;
+}
+
+.demo {
+    width: 300px;
+    height: 350px;
+}
+
+.demo-card {
+    -webkit-box-shadow: 0px 0px 124px 8px rgba(117, 18, 144, 0.3);
+    -moz-box-shadow: 0px 0px 124px 8px rgba(117, 18, 144, 0.3);
+    box-shadow: 0px 0px 124px 8px rgba(117, 18, 144, 0.3);
+}
+
+.demo1 {
+    background-image: url(../img/demo/demo1.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
+.demo2 {
+    background-image: url(../img/demo/demo2.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
+.demo3 {
+    background-image: url(../img/demo/demo3.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+
+.demo:hover {
+    animation: slideDown 3s ease-in-out;
+}
+
+@keyframes slideDown {
+    form {
+        background-position: top center;
+    }
+
+    to {
+        background-position: bottom center;
+    }
+
+}
+
+#contact {
+    position: relative;
+}
+
+#contact>form {
+    width: 700px;
+}
+
+@media(max-width:768px) {
+    #contact>form {
+        width: 100%;
+    }
+}
+
+.text-area {
+    border-radius: 8px;
+}
+
+.custom-shape-divider-bottom-1673041566 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1673041566 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 67px;
+}
+
+.custom-shape-divider-bottom-1673041566 .shape-fill {
+    fill: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1673041566 svg {
+        width: calc(100% + 1.3px);
+        height: 93px;
+    }
+}
+.scrollUp{
+    width:60px;
+    height: 60px;
+    border-radius:50%;
+    position:fixed;
+    right:10px;
+    bottom: 10px;
+    background-color: #751290bb;
+}
+.scrollUp:hover{
+    background-color: #751290;
+    cursor: pointer;
+}
+/* index.html css */
+
+
+/* sss.html css */
+.accordion-button:focus,.accordion-button:active{
+    background-color: #751290;
+    color: #fff !important;
+}
+/* sss.html css */
+
+/*Support*/
+.left{
+    height:100vh;
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width:768px) {
+    .left{
+        height:55vh;
+    }
+    
+}
+
+/*Support*/
